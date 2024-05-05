@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#BAB7B7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Log In"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:id="@+id/etEmailLogIn">
+
+    </EditText>
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:id="@+id/etPasswordLogIn">
+
+    </EditText>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:text="Log in"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btLogIn"
+        android:backgroundTint="#333333">
+
+    </Button>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:id="@+id/tvErrorLogIn"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF0000">
+
+    </TextView>
+
+
+</LinearLayout>

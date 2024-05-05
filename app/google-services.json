@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1022582761945",
+    "project_id": "mobmastery-b14d9",
+    "storage_bucket": "mobmastery-b14d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022582761945:android:f73faf10cdb9c4e957d1c8",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2imJRm3xFGe5LlTxZaAItSiWF7PBQaW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

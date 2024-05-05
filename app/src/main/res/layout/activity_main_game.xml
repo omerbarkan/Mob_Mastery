@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAB7B7"
+    android:orientation="vertical"
+    tools:context=".MainGame"
+    android:id="@+id/rlMainGame">
+
+
+    <TextView
+        android:id="@+id/tvGold"
+        android:layout_width="135dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Currency : ??">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="140dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tvGems"
+        android:layout_toEndOf="@+id/tvGold"
+        android:gravity="center"
+        android:text="ACCOUNT NAME">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvGems"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Currency : ??">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Level : ??">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/ibSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGold"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_save" />
+
+    <ImageButton
+        android:id="@+id/ibRebirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGold"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_rotate" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLevel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Health : ??/???">
+
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/pbHealth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvHealth"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+
+        android:max="100"
+        android:progressBackgroundTint="#FF0000"
+        android:progressTint="#FF0000">
+
+    </ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/pbTime"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pbHealth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="50dp"
+        android:max="150"
+        android:progressBackgroundTint="#03A9F4"
+        android:progressTint="#03A9F4">
+
+    </ProgressBar>
+
+
+    <LinearLayout
+        android:id="@+id/lySkills"
+        android:layout_width="50dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/lvMain"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btskillOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_design"
+                android:text="dsadsad" />
+
+
+            <ProgressBar
+
+                android:indeterminate="false"
+                android:id="@+id/pbSkillOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/skillcdbar"
+
+
+
+                android:alpha="0">
+
+            </ProgressBar>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageButton
+                android:id="@+id/btskillTwo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/text_design"/>
+
+            <ProgressBar
+                android:indeterminate="false"
+                android:id="@+id/pbSkillTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/skillcdbar"
+
+                android:alpha="0">
+
+            </ProgressBar>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageButton
+                android:id="@+id/btskillThree"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/text_design"/>
+
+            <ProgressBar
+                android:indeterminate="false"
+                android:id="@+id/pbSkillThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/skillcdbar"
+
+                android:alpha="0">
+
+            </ProgressBar>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageButton
+                android:id="@+id/btskillFour"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/text_design"/>
+
+            <ProgressBar
+                android:indeterminate="false"
+                android:id="@+id/pbSkillFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/skillcdbar"
+
+                android:alpha="0">
+
+            </ProgressBar>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivMonster"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lvMain"
+        android:layout_below="@+id/pbTime"
+        android:layout_alignStart="@+id/pbTime"
+        android:layout_alignEnd="@+id/pbTime"
+        android:src="@drawable/vampire">
+
+
+    </ImageView>
+
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_above="@+id/lyButton"
+        android:layout_marginTop="0dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btEquipment"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:background="@drawable/text_design"
+            android:scaleType="centerInside"
+            android:src="@drawable/sword"
+
+            >
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btBonus"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:background="@drawable/text_design"
+            android:scaleType="centerInside"
+            android:src="@drawable/goldcoin">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btSkills"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:background="@drawable/text_design"
+            android:hint="Skills"
+            android:scaleType="centerInside"
+            android:src="@drawable/fireball">
+
+
+        </ImageButton>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Skills"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#BAB7B7">
+
+
+    <ImageView
+        android:id="@+id/ivBack3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_gravity="left">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skills"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvGems1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gems : ?"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/btBuySkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Random Skill\nCost : 50 gems"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#333333"
+        >
+
+    </Button>
+    <ListView
+        android:id="@+id/lvSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
